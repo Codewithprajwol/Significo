@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root{
+    --salmon:#EF9D71;
+    --black:#000;
+    --white:#fff;
+    --dcyan:rgb(13, 116, 116);
+    --dsalmon:rgb(139, 25, 12);
+    --cyan:cyan;
+}
+
+@font-face {
+    font-family: makina;
+    src: url(/font/makina.ttf);
+}
+*::selection{
+    background-color:var(--salmon);
+}
+body[theme="black"]{
+    background-color: black;
+}
+body[theme="black"] .section{
+    color: white;
+}
+body[theme="salmon"]{
+    background-color: salmon;
+}
+body[theme="salmon"] .section{
+    color: rgb(139, 25, 12);
+}
+body[theme="cyan"]{
+    background-color: cyan;
+}
+body[theme="cyan"] .section{
+    color: rgb(13, 116, 116);
+}
+body[theme="white"]{
+    background-color: white;
+}
+body[theme="white"] .section{
+    color: black;
+}
